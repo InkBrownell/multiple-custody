@@ -10,6 +10,12 @@ def test_empty_decode():
 
 
 class TestInvalidEncode:
+    def test_encode_wrong_length_secret(self):
+        secret = get_random_bytes(32)
+        schema = {'all': ['a', 'b', 'c']}
+        with pytest.raises(ValueError):
+            EncryptedShare.encode(secret, schema)
+
     def test_empty_encode(self):
         secret = get_random_bytes(16)
         with pytest.raises(ValueError):
