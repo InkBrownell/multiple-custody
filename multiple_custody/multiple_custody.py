@@ -204,7 +204,7 @@ class EncryptedShare:
         )
 
 
-if __name__ == '__main__':
+def main():
     parser = argparse.ArgumentParser(
         prog='multiple_custody',
         description='Compute keys for multiple custody of a 16-byte (128-bit) secret')
@@ -261,3 +261,7 @@ if __name__ == '__main__':
             print(b64encode(secret))
         elif args.encoding == 'binary':
             sys.stdout.buffer.write(secret)
+
+
+if __name__ == '__main__':
+    main()

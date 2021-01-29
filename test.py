@@ -1,7 +1,7 @@
 import pytest
 from Crypto.Random import get_random_bytes
 
-from multiple_custody.main import EncryptedShare
+from multiple_custody.multiple_custody import EncryptedShare
 
 
 def test_empty_decode():
