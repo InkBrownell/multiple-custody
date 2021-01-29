@@ -3,6 +3,11 @@
 This project builds upon Shamir's Secret Sharing Scheme in order to provide a mechanism for arbitrary key-sharing
 schemas.
 
+## WARNING: This is a toy project. Don't use it for anything security-critical.
+
+While I believe this project is safe, I'm not a security expert. I don't have the skills to evaluate whether the methods used
+here are safe.
+
 ## Schemas
 
 A schema is a JSON file, formatted like so:
